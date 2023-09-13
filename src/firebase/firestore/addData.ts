@@ -1,15 +1,11 @@
-import firebase_app from "../config";
-import { getFirestore, doc, setDoc } from "firebase/firestore";
+import firebase_app from '../config';
+import { getFirestore, doc, setDoc } from 'firebase/firestore';
 
 // Get the Firestore instance
 const db = getFirestore(firebase_app);
 
 // Function to add data to a Firestore collection
-export default async function addData(
-  collection: string,
-  id: string,
-  data: any
-) {
+export default async function addData(collection: string, id: string, data: any) {
   // Variable to store the result of the operation
   let result = null;
   // Variable to store any error that occurs during the operation
