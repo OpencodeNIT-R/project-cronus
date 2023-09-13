@@ -9,7 +9,8 @@
     "lint": "eslint . --ext js,jsx,ts,tsx --report-unused-disable-directives --max-warnings 0 --fix",
     "format:check": "prettier --check --config .prettierrc --ignore-path .prettierignore .",
     "lint:check": "eslint . --ext js,jsx,ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "start": "next start"
+    "start": "next start",
+    "prepare": "husky install"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
@@ -18,6 +19,7 @@
     ]
   },
   "dependencies": {
+    "@next/eslint-plugin-next": "^13.4.19",
     "@types/node": "20.4.5",
     "@types/react": "18.2.21",
     "@types/react-dom": "18.2.7",
